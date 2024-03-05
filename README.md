@@ -1,4 +1,6 @@
-# Nextflow and Containers Workshop
+# EPP 575 Introduction to RNA-Seq
+
+EPP 575 Introduction to RNA-Seq is being offered as a 5 day, 1 credit-hour course (CRN 87151) *or* a non-credit workshop for $100.
 
 For course content, please see the [wiki](https://github.com/ryandkuster/EPP_575_RNA/wiki).
 
