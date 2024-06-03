@@ -41,7 +41,8 @@ gsea <- gseGO(geneList=gene_list,
                        pvalueCutoff = 0.05, 
                        verbose = TRUE, 
                        OrgDb = org.At.tair.db)
-summary(gsea)
+
+summary(as.data.frame(gsea))
 dotplot(gsea, showCategory=10, split=".sign") + facet_grid(.~.sign)
 
 gsea_kegg <- gseKEGG(geneList = gene_list,
@@ -50,7 +51,8 @@ gsea_kegg <- gseKEGG(geneList = gene_list,
                      maxGSSize = 1000,
                      pvalueCutoff = 0.05,
                      verbose = FALSE)
-summary(gsea_kegg)
+
+summary(as.data.frame(gsea_kegg))
 dotplot(gsea_kegg, showCategory = 10, split=".sign") + facet_grid(.~.sign)
 
 # now let's do an over-representation analysis (gene names only)
