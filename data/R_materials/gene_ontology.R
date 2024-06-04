@@ -3,8 +3,13 @@ library(enrichplot)
 library(ggplot2)
 library(pathview)
 
+# only run this code if you get a HDO.db related error while running library(clusterProfiler)
+BiocManager::install("HDO.db")
+
 # Arabidopsis Database
 AT_DB = "org.At.tair.db"
+
+# use argument force=TRUE if warning message arrives
 BiocManager::install(AT_DB, character.only = TRUE)
 library(AT_DB, character.only = TRUE)
 keytypes(org.At.tair.db)
